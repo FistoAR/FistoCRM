@@ -473,7 +473,7 @@ class DashboardSPA {
             console.warn('No valid session data found');
             this.showNotification('Your session has expired. Please login again.', 'error');
             setTimeout(() => {
-                window.location.href = 'login.html';
+                window.location.href = 'index.html';
             }, 2000);
             return false;
         }
@@ -979,7 +979,7 @@ class DashboardSPA {
             // Show notification and redirect
             this.showNotification('Logged out successfully!', 'success');
             setTimeout(() => {
-                window.location.href = 'login.html';
+                window.location.href = 'index.html';
             }, 1000);
         }
     }
@@ -1359,7 +1359,7 @@ document.addEventListener('DOMContentLoaded', () => {
         console.error('✗ Error initializing Dashboard SPA:', error);
         // Fallback to login page on critical error
         setTimeout(() => {
-            window.location.href = 'login.html';
+            window.location.href = 'index.html';
         }, 2000);
     }
 });
@@ -1493,7 +1493,7 @@ document.addEventListener('DOMContentLoaded', () => {
     } catch (error) {
         console.error('✗ Error initializing Dashboard SPA:', error);
         setTimeout(() => {
-            window.location.href = 'login.html';
+            window.location.href = 'index.html';
         }, 2000);
     }
 });
